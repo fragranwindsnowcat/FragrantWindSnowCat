@@ -8,18 +8,89 @@
 
 <title>香風雪貓網站【首頁】</title>
 </head>
-<body>
+<body background="https://truth.bahamut.com.tw/s01/201612/0902c8ddec4ee1859985a67d5985e830.JPG">
 <style>
 <!--
 A{text-decoration:none}
 -->
 </style>
 
+<script language="Javascript">
 
-<font size="7"><p style="text-align:center"><span style="color:#000000">香風雪貓公告區 </span></font></p><p style="text-align:center"><span style="color:#000000">&nbsp </span><p>
+<!--
+
+var background = "png.png";
+
+var speed = 0;
+
+
+browserName = navigator.appName;
+
+browserVer = parseInt(navigator.appVersion);
+
+
+if (browserName != "Netscape" || browserVer >= 4.5) {
+
+
+function moveback(movert,movedn,hPos,vPos) {
+
+ 
+  if (arguments[4])
+
+    document.body.style.backgroundImage = "url(\"" + arguments[4] + "\")";
+
+ 
+
+  if (arguments[5])
+
+    document.body.style.backgroundRepeat = arguments[5]
+
+ 
+
+  if (!isNaN(hPos)) {
+
+    if ((movert!=0) && (hPos>0)) hPos=-100000
+
+    hPos += movert
+
+  } 
+
+  if (!isNaN(vPos)) {
+
+    if ((movedn!=0) && (vPos>0)) vPos=-100000
+
+    vPos+= movedn
+
+  }
+
+ 
+
+  document.body.style.backgroundPosition= hPos + " " + vPos
+
+  if (isNaN(hPos))  hPos = "\"" + hPos + "\""
+
+  if (isNaN(vPos)) vPos = "\"" + vPos + "\""
+
+setTimeout("moveback("+movert+","+movedn+","+hPos+","+vPos+")",speed)
+
+}
+
+
+moveback(1,1,0,0, background);
+
+}
+
+
+//-->
+
+</script>
+
+
+<font size="7"><p style="text-align:center"><span style="color:#ffffff">香風雪貓公告區 </span></font></p><p style="text-align:center"><span style="color:#000000">&nbsp </span><p>
 
 <span style="color:#000000">&nbsp </span><p style="text-align:center"><span style="color:#000000"><hr></hr></p>
 <p style="text-align:center"><span style="color:#000000"><font size="6"><a href="./test.html">【公告】官方專用測試公告串</a></p></span></font>
+
 
 </body>
 </html>

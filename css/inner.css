@@ -1,0 +1,10 @@
+#st1 .inner {
+ padding: 1em 4%;
+}
+/*標題 h1, 段落 p 加半透明背景色*/
+#st1 h1 {
+ background: rgba(30%,0%,0%,0.6);
+}
+#st1 p {
+ background: rgba(0%,10%,20%,0.6);
+}
