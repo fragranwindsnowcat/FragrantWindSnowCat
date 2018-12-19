@@ -1,0 +1,2 @@
+node java.js
+pause
